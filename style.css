@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Vai contar a partir da borda e não do conteúdo*/
+}
+
+html{
+    /*variaveis */
+    --bg-color: #EDF2FF;
+    --text-color: #00082F;
+    --primary-color: #4263eb;
+    --primary-color-dark: #364fc7;
+}
+
+body.dark-blue {
+    --bg-color: #00082F;
+    --text-color: #ffffff;
+}
+
+body.pink {
+    --bg-color: #fff0f6;
+    --text-color: #1F000B;
+    --primary-color: #d6336c;
+    --primary-color-dark: #a61e4d;
+}
+
+body.dark-pink {
+    --bg-color: #1F000B;
+    --text-color: #ffffff;
+    --primary-color: #D6336C;
+    --primary-color-dark: #A61E4D;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color); /*Aplicando a cor a todos os textos dentro do body*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {    /* border: 1px red solid; -- borda do box */
+    text-align: center; /* Todos os textos alinhados ao centro da tela */
+    width: 300px;
+    margin: 60px auto;
+}
+
+img {
+    width: 100%;
+}
+
+img.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 3.7px;
+    border: var(--primary-color) solid 4px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 27.7px;
+    margin-bottom: 8px;
+}
+
+.username {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    margin: 48px 0px;
+}
+
+ul li a {   /* Dentro da ul procurar a li e dentro da li procurar a "a" */
+    height: 53px;
+    display: flex;
+    align-items: center;    /*Alinha ao centro do eixo Y */
+    justify-content: center;    /*Alinha ao centro do eixo X */
+    background: var(--primary-color);
+    color: white;
+    text-transform: uppercase;  /* uppercase deixa o texto todo em maiúsculo */
+    font-size: 14px;
+
+    margin-bottom: 16px;
+    border-radius: 6px;
+
+    transition: background 400ms;   /* Quando o hoover for acionado, o transition vai suavizar o efeito de mudança */
+}
+
+ul li a:hover { /* quando passar o mouse em cima do botão, muda a cor */
+    background: var(--primary-color-dark);
+
+}
+
+footer {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;   /*Dando opacidade ao footer */
+    transition: opacity 400ms;
+}
+
+footer:hover {
+    opacity: 1;
+}
+
+footer a {
+    color: var(--text-color);
+}
